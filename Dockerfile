@@ -35,7 +35,7 @@ sudo \
 && rm -rf /var/cache/dnf/*
 
 # Install ansible.
-RUN pip3 install ansible
+RUN pip3 install ansible 'cryptography==3.3.2'
 
 # Create ansible directory and copy ansible inventory file.
 RUN mkdir /etc/ansible
